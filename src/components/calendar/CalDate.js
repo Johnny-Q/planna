@@ -1,12 +1,13 @@
 import { Box, Text, IconButton } from "@chakra-ui/react"
 import { AddIcon } from "@chakra-ui/icons";
+import TodoList from "./todo/TodoList";
+
 
 const CalDate = ({ dayOfWeek, dateNum, isToday }) => {
     let header = <></>;
     // header
     if (dayOfWeek) {
-        header = 
-        <>
+        header = <>
             <Box>
                 <Text
                     fontSize="xl"
@@ -17,12 +18,14 @@ const CalDate = ({ dayOfWeek, dateNum, isToday }) => {
                     right={2}
                 >{dateNum}</Text>
             </Box>
-        </>
+        </>;
     }
 
     return (
         <Box w="100%" h="100%" p={4} border="1px solid black;" position="relative">
             {header}
+            <TodoList />
+            <TodoList />
             <IconButton
                 position="absolute"
                 bottom={1}
