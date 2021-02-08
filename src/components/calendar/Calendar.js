@@ -1,6 +1,6 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
 import CalDate from "./CalDate";
-const days = [];
+const days = []
 const day_names = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 for (let i = 0; i < 2; i++) {
     for (let j = 0; j < 5; j++) {

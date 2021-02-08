@@ -9,7 +9,7 @@ const TodoItem = () => {
                 <circle cx="3.5" cy="3.5" r="3.5" fill="#4F4F4F" />
             </svg>
         </Center>
-        <Text noOfLines={2} isTruncated>
+        <Text lineHeight="1.35" noOfLines={2} isTruncated>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit
         </Text>
     </ListItem>

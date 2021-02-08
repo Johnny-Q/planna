@@ -1,15 +1,18 @@
-import { List, ListItem, Text, Flex, Center } from '@chakra-ui/react';
+import { List, ListItem, Text, Flex, Center, Box } from '@chakra-ui/react';
 import TodoItem from "./TodoItem"
 import VertLine from "./VertLine";
-const TodoList = () => {
+const TodoList = ({ title, subtitle }) => {
     return (
         <>
             <Flex>
                 <Center mr={1}>
-                    <VertLine width={1} color="green"/>
-                    <VertLine width={1} color="tomato"/>
+                    <VertLine width={1} color="green" />
+                    <VertLine width={1} color="tomato" />
                 </Center>
-                <Text>Computer Science</Text>
+                <Box>
+                    <Text fontSize="xl">{title}</Text>
+                    <Text fontSize="small">{subtitle}</Text>
+                </Box>
             </Flex>
             <List>
                 <TodoItem />
